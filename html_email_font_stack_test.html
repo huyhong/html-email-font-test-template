@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Email title or subject</title>
+
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+  body {
+    font-family: serif;
+  }
+
+  .always-comic-sans {
+    font-family: "Comic Sans MS" !important;
+  }
+
+  .no-font-family-declaration {}
+
+  .helvetica-arial {
+    font-family: Helvetica, Arial;
+  }
+
+  .system-ui {
+    font-family: system-ui;
+  }
+
+  .github-stack {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  .medium-wordpress-stack {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  }
+
+  /* `local()` @font-face stack */
+  @font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  }
+
+  @font-face {
+    font-family: system;
+    font-style: italic;
+    font-weight: 300;
+    src: local(".SFNSText-LightItalic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Light Italic"), local("Ubuntu Light Italic"), local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
+  }
+
+  @font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 400;
+    src: local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Segoe UI"), local("Ubuntu"), local("Roboto-Regular"), local("DroidSans"), local("Tahoma");
+  }
+
+  @font-face {
+    font-family: system;
+    font-style: italic;
+    font-weight: 400;
+    src: local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Italic"), local("Ubuntu Italic"), local("Roboto-Italic"), local("DroidSans"), local("Tahoma");
+  }
+
+  @font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 500;
+    src: local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold"), local("Ubuntu Medium"), local("Roboto-Medium"), local("DroidSans-Bold"), local("Tahoma Bold");
+  }
+
+  @font-face {
+    font-family: system;
+    font-style: italic;
+    font-weight: 500;
+    src: local(".SFNSText-MediumItalic"), local(".HelveticaNeueDeskInterface-MediumItalicP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold Italic"), local("Ubuntu Medium Italic"), local("Roboto-MediumItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+  }
+
+  @font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 700;
+    src: local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Segoe UI Bold"), local("Ubuntu Bold"), local("Roboto-Bold"), local("DroidSans-Bold"), local("Tahoma Bold");
+  }
+
+  @font-face {
+    font-family: system;
+    font-style: italic;
+    font-weight: 700;
+    src: local(".SFNSText-BoldItalic"), local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"), local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"), local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+  }
+
+  .local-font-face {
+    font-family: system;
+  }
+
+  /* webfont @font-face (code from https://fonts.googleapis.com/css?family=Lobster) */
+  /* cyrillic */
+  @font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v19/MeFZ5NpSE1j8mC06Jh1miFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v19/UKmFXcLnvG78k2CT5LYRfFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v19/MCZn_h27nLxWmTqnbmnb3lKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v19/G6-OYdAAwU5fSlE7MlBvhQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+  .webfont-font-face {
+    font-family: 'Lobster';
+  }
+
+  .webfont-link {
+    font-family: 'Lobster Two'
+  }
+
+  .webfont-font-face-import {
+    font-family: 'Pacifico'
+  }
+</style>
+
+
+
+<!--[if gte mso 9]>
+  <style>
+  /* Target Outlook 2007 and 2010 */
+  </style>
+<![endif]-->
+</head>
+<body>
+
+	<div class="no-font-family-declaration">
+    <h1 class="no-font-family-declaration">Serif Control: No `font-family` declaration</h1>
+    <p class="no-font-family-declaration">😮 🤔 🙄</p>
+    <p class="always-comic-sans">This is always Comic Sans MS.</p>
+    <p class="no-font-family-declaration">Sriracha leggings selvage semiotics cred meh cliche readymade seitan irony poutine. Food truck poutine cornhole, distillery biodiesel messenger bag fanny pack chartreuse twee flexitarian offal meditation.</p>
+    <pre class="no-font-family-declaration">Pour-over snackwave poke, salvia locavore stumptown jianbing.</pre>
+    <code class="no-font-family-declaration">Ramps wolf seitan biodiesel photo booth glossier pop-up pok pok live-edge mlkshk next level banjo cred chartreuse vaporware.</code>
+  </div>
+
+	<div class="helvetica-arial">
+    <h1 class="helvetica-arial">Sans-Serif Control: `font-family: Helvetica, Arial;`</h1>
+    <p class="helvetica-arial">😮 🤔 🙄</p>
+    <p class="always-comic-sans">This is always Comic Sans MS.</p>
+    <p class="helvetica-arial">Sriracha leggings selvage semiotics cred meh cliche readymade seitan irony poutine. Food truck poutine cornhole, distillery biodiesel messenger bag fanny pack chartreuse twee flexitarian offal meditation.</p>
+    <pre class="helvetica-arial">Pour-over snackwave poke, salvia locavore stumptown jianbing.</pre>
+    <code class="helvetica-arial">Ramps wolf seitan biodiesel photo booth glossier pop-up pok pok live-edge mlkshk next level banjo cred chartreuse vaporware.</code>
+  </div>
+
+	<div class="system-ui">
+    <!-- https://www.chromestatus.com/feature/5640395337760768 -->
+    <h1 class="system-ui">CSS Fonts 4 / Chrome 56+: `font-family: system-ui;`</h1>
+    <p class="system-ui">😮 🤔 🙄</p>
+    <p class="always-comic-sans">This is always Comic Sans MS.</p>
+    <p class="system-ui">Sriracha leggings selvage semiotics cred meh cliche readymade seitan irony poutine. Food truck poutine cornhole, distillery biodiesel messenger bag fanny pack chartreuse twee flexitarian offal meditation.</p>
+    <pre class="system-ui">Pour-over snackwave poke, salvia locavore stumptown jianbing.</pre>
+    <code class="system-ui">Ramps wolf seitan biodiesel photo booth glossier pop-up pok pok live-edge mlkshk next level banjo cred chartreuse vaporware.</code>
+  </div>
+
+	<div class="github-stack">
+    <!-- https://css-tricks.com/snippets/css/system-font-stack/ -->
+    <h1 class="github-stack">GitHub Stack: `font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";`</h1>
+    <p class="github-stack">😮 🤔 🙄</p>
+    <p class="always-comic-sans">This is always Comic Sans MS.</p>
+    <p class="github-stack">Sriracha leggings selvage semiotics cred meh cliche readymade seitan irony poutine. Food truck poutine cornhole, distillery biodiesel messenger bag fanny pack chartreuse twee flexitarian offal meditation.</p>
+    <pre class="github-stack">Pour-over snackwave poke, salvia locavore stumptown jianbing.</pre>
+    <code class="github-stack">Ramps wolf seitan biodiesel photo booth glossier pop-up pok pok live-edge mlkshk next level banjo cred chartreuse vaporware.</code>
+  </div>
+
+	<div class="medium-wordpress-stack">
+    <!-- https://css-tricks.com/snippets/css/system-font-stack/ -->
+    <h1 class="medium-wordpress-stack">Medium/Wordpress Stack: `font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;`</h1>
+    <p class="medium-wordpress-stack">😮 🤔 🙄</p>
+    <p class="always-comic-sans">This is always Comic Sans MS.</p>
+    <p class="medium-wordpress-stack">Sriracha leggings selvage semiotics cred meh cliche readymade seitan irony poutine. Food truck poutine cornhole, distillery biodiesel messenger bag fanny pack chartreuse twee flexitarian offal meditation.</p>
+    <pre class="medium-wordpress-stack">Pour-over snackwave poke, salvia locavore stumptown jianbing.</pre>
+    <code class="medium-wordpress-stack">Ramps wolf seitan biodiesel photo booth glossier pop-up pok pok live-edge mlkshk next level banjo cred chartreuse vaporware.</code>
+  </div>
+
+	<div class="local-font-face">
+    <!-- https://github.com/jonathantneal/system-font-css/blob/gh-pages/system-font.css -->
+    <h1 class="local-font-face">`local()` `@font-face`: `font-family: system-font; src: local("...");`</h1>
+    <p class="local-font-face">😮 🤔 🙄</p>
+    <p class="always-comic-sans">This is always Comic Sans MS.</p>
+    <p class="local-font-face">Sriracha leggings selvage semiotics cred meh cliche readymade seitan irony poutine. Food truck poutine cornhole, distillery biodiesel messenger bag fanny pack chartreuse twee flexitarian offal meditation.</p>
+    <pre class="local-font-face">Pour-over snackwave poke, salvia locavore stumptown jianbing.</pre>
+    <code class="local-font-face">Ramps wolf seitan biodiesel photo booth glossier pop-up pok pok live-edge mlkshk next level banjo cred chartreuse vaporware.</code>
+  </div>
+
+  <!-- /* cyrillic */
+  @font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v19/MeFZ5NpSE1j8mC06Jh1miFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v19/UKmFXcLnvG78k2CT5LYRfFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v19/MCZn_h27nLxWmTqnbmnb3lKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v19/G6-OYdAAwU5fSlE7MlBvhQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  } -->
+  <div class="webfont-font-face">
+    <!-- https://litmus.com/blog/the-ultimate-guide-to-web-fonts -->
+    <h1 class="webfont-font-face">Webfont `@import`: `font-family: local('Lobster'), url(...);`</h1>
+    <p class="webfont-font-face">😮 🤔 🙄</p>
+    <p class="always-comic-sans">This is always Comic Sans MS.</p>
+    <p class="webfont-font-face">Sriracha leggings selvage semiotics cred meh cliche readymade seitan irony poutine. Food truck poutine cornhole, distillery biodiesel messenger bag fanny pack chartreuse twee flexitarian offal meditation.</p>
+    <pre class="webfont-font-face">Pour-over snackwave poke, salvia locavore stumptown jianbing.</pre>
+    <code class="webfont-font-face">Ramps wolf seitan biodiesel photo booth glossier pop-up pok pok live-edge mlkshk next level banjo cred chartreuse vaporware.</code>
+  </div>
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
+  <div class="webfont-link">
+    <!-- https://litmus.com/blog/the-ultimate-guide-to-web-fonts -->
+    <h1 class="webfont-link">Webfont `&lt;link&gt;`: `font-family: system-font; src: local("...");`</h1>
+    <p class="webfont-link">😮 🤔 🙄</p>
+    <p class="always-comic-sans">This is always Comic Sans MS.</p>
+    <p class="webfont-link">Sriracha leggings selvage semiotics cred meh cliche readymade seitan irony poutine. Food truck poutine cornhole, distillery biodiesel messenger bag fanny pack chartreuse twee flexitarian offal meditation.</p>
+    <pre class="webfont-link">Pour-over snackwave poke, salvia locavore stumptown jianbing.</pre>
+    <code class="webfont-link">Ramps wolf seitan biodiesel photo booth glossier pop-up pok pok live-edge mlkshk next level banjo cred chartreuse vaporware.</code>
+  </div>
+
+  <!-- <h1>Webfont `@font-face`: `@import url('https://fonts.googleapis.com/css?family=Lobster');`</h1> -->
+  <div class="webfont-font-face-import">
+    <!-- https://litmus.com/blog/the-ultimate-guide-to-web-fonts -->
+    <h1 class="webfont-font-face-import">Webfont `@font-face`: `@import url('...');`</h1>
+    <p class="webfont-font-face-import">😮 🤔 🙄</p>
+    <p class="always-comic-sans">This is always Comic Sans MS.</p>
+    <p class="webfont-font-face-import">Sriracha leggings selvage semiotics cred meh cliche readymade seitan irony poutine. Food truck poutine cornhole, distillery biodiesel messenger bag fanny pack chartreuse twee flexitarian offal meditation.</p>
+    <pre>Pour-over snackwave poke, salvia locavore stumptown jianbing.</pre>
+    <code>Ramps wolf seitan biodiesel photo booth glossier pop-up pok pok live-edge mlkshk next level banjo cred chartreuse vaporware.</code>
+  </div>
+
+</body>
+</html>
